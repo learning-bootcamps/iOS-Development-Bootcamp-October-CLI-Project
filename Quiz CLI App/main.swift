@@ -96,7 +96,7 @@ func startQuiz() {
                 }
             }
         }
-    } catch{
+    }catch{
         print(error)
     }
     
@@ -125,9 +125,7 @@ func test(for question: Question) -> Int{
     for index in 0..<question.answers.count {
         print("\(index)) \(question.answers[index])")
     }
-    
-    var shouldContinue = true
-    
+        
     repeat {
         print("Your choice:", terminator: " ")
         if let input = readLine(){
@@ -149,7 +147,7 @@ func test(for question: Question) -> Int{
         }else{
             print("You need to entry only numbers.")
         }
-    } while shouldContinue
+    } while true
 }
 
 func startQuestions(with questions: [Question]) -> Int{
@@ -159,7 +157,6 @@ func startQuestions(with questions: [Question]) -> Int{
     }
     return totalScore
 }
-
 
 
 startQuiz()
