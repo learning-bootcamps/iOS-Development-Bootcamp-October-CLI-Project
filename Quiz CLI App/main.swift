@@ -24,7 +24,7 @@ func LoadQuestions() {
 
 func startQuiz() {
     print("If you want to load the quiz, please enter 1. If not, please enter 0")
-    var correctCounter
+    var correctCounter : Int = 0
     while true  {
         if let readInput = readLine() {
                 if let choice =  Int(readInput) {
