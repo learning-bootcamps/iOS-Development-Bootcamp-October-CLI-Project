@@ -99,7 +99,6 @@ func startQuiz() {
     }catch{
         print(error)
     }
-    
 }
 
 
