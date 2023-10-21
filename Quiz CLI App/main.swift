@@ -24,10 +24,8 @@ func LoadQuestions() {
 
 func startQuiz() {
     print("If you want to load the quiz, please enter 1. If not, please enter 0")
-    var correctCounter:Int = 0
     while true  {
-        let readInput = readLine()
-        if  readInput{
+        if let readInput = readLine() {
                 if let choice =  Int(readInput) {
                     if choice == 1 {
                         LoadQuestions()
@@ -40,8 +38,6 @@ func startQuiz() {
                     print("Please enter a valid number (0 or 1)")
                 }
         }
-    } if readInput == Questions().answers{
-        correctCounter += 1
     }
 }
 
